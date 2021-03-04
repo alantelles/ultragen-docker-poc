@@ -1,0 +1,14 @@
+.site-title {
+    background-color: rgb(180, 0, 0);
+    padding: 20px;
+    color: #fff;
+    font-size: 2.5em;
+    margin: 0;
+}
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+.breathe-top {
+    margin-top: 20px;
+}

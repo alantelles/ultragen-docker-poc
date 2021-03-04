@@ -1,0 +1,19 @@
+include @Core.Web.Router
+
+$router = new Router()
+
+
+
+$router.get('/', :index, function (params)
+    include 'views/Index.ultra'
+end)
+
+$router.get('/users/:id', :show_user, function(params)
+    include 'views/ShowUser.ultra'
+end)
+
+$router.get('/users', :users, function (params)
+    include 'views/Users.ultra'
+end)
+
+$router.getMatch($request[:route], $request[:method]).localize()

@@ -1,0 +1,10 @@
+function Users(params)
+    response =  BaseContainer(function(params)
+        include 'templates/users.ultra.html'
+    end)
+    users_data = JSON.parseFile('fakedata/raw_json/users.json')
+    
+    live response()
+end
+
+live Users(params)

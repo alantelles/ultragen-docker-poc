@@ -1,0 +1,15 @@
+function Users(params)
+    response =  BaseContainer(function(params)
+        include 'templates/show_user.ultra.html'
+    end)
+    users_data = JSON.parseFile('fakedata/raw_json/users.json')
+    for (users_data, user_data)
+        if ((user_data[:id]) == int(params[:id]))            
+            user = user_data
+            break
+        end
+    end
+    live response()
+end
+
+live Users(params)

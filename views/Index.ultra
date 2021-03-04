@@ -1,0 +1,8 @@
+function Index(params)
+    response =  BaseContainer(function(params)
+        include 'templates/index.ultra.html'
+    end)
+    live response()
+end
+
+live Index(params)
