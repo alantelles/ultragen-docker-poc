@@ -2,7 +2,7 @@ include @Core.Web.Server
 include @Core.OS
 
 
-s = new Server(int(OS.getEnv('PORT', 3500)))
+s = new Server(int(OS.getEnv('PORT', 3500)), true)
 app_folder = OS.getEnv('APP_FOLDER', OS.getEnv('PWD'))
 s.setStaticPath(:static, app_folder + '/static')
 s.run()

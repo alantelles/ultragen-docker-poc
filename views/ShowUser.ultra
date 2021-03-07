@@ -5,7 +5,7 @@ function Users(params)
     users_data = JSON.parseFile('fakedata/raw_json/users.json')
     user = null
     for (users_data, user_data)
-        if ((user_data[:id]) == int(params[:id]))            
+        if ((user_data[:id]) == (params[:id]))
             user = user_data
             break
         end
